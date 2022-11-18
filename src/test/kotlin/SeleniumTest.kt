@@ -3,6 +3,7 @@ import org.openqa.selenium.By
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
+import java.time.Duration
 
 
 class SeleniumTest {
@@ -13,7 +14,7 @@ class SeleniumTest {
 
 
         val driver = ChromeDriver()
-        val waitDriver = WebDriverWait(driver, 3)
+        val waitDriver = WebDriverWait(driver, Duration.ofSeconds(3))
         driver.get("https://www.insidetracker.com/")
 
         driver.manage().window().maximize()
@@ -64,7 +65,7 @@ class SeleniumTest {
         System.setProperty("webdriver.chrome.driver", "/chrome/chromedriver.exe")
 
         val driver = ChromeDriver()
-        val waitDriver = WebDriverWait(driver, 3)
+        val waitDriver = WebDriverWait(driver, Duration.ofSeconds(3))
 
         driver.get("https://demo.guru99.com/test/delete_customer.php")
 

@@ -17,7 +17,7 @@ import org.hamcrest.Matchers.*
 import org.junit.jupiter.api.Test
 import kotlin.concurrent.timerTask
 
-class `Sample Test` : BaseTest() {
+class `Sample Test` : RestAssuredBase() {
 
     @Test
     fun `get single user`() {
@@ -27,7 +27,7 @@ class `Sample Test` : BaseTest() {
             get("/users/1")
         } Then {
             statusCode(HttpStatus.SC_OK)
-            body("data.email", equalTo("janet.weaver@reqres.in"))
+            body("data.email", equalTo("george.bluth@reqres.in"))
         }
     }
 

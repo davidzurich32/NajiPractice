@@ -17,7 +17,7 @@ repositories {
 
 dependencies {
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
-    implementation("org.seleniumhq.selenium:selenium-java:2.41.0")
+    implementation("org.seleniumhq.selenium:selenium-java:4.6.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5:1.6.20")
     testImplementation("org.hamcrest:hamcrest:2.2")
